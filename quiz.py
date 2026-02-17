@@ -2,13 +2,13 @@ print("Welcome to my Quiz Game!")
 
 playing = input("Do you wanna play? ")
 
-if playing != "yes":
+if playing.lower() != "yes":
     quit()
 else:
     print("Finally a worthy oponent")
 
 answer = input("What does CPU stand for? ")
-if answer == "central processing unit":
+if answer.lower() == "central processing unit":
     print("correct!")
 else:
     print("Better Luck next time")
@@ -16,7 +16,7 @@ else:
 
 
 answer1 = input("What is the brain of the computer called? ")
-if answer1 == "cpu":
+if answer1.lower() == "cpu":
     print("correct!")
 else:
     print("Better Luck next time")
@@ -24,14 +24,14 @@ else:
 
 
 answer2 = input("What type of memory is temporary and loses data when powered off? ")
-if answer2 == "ram":
+if answer2.lower() == "ram":
     print("correct!")
 else:
     print("Better Luck next time")
     quit()
 
 answer3 = input("What is your age? ")
-if answer3 == 23:
+if answer3.lower() == 23:
     print("correct")
 else:
     print("Better Luck next Time")
