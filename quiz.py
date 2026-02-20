@@ -34,9 +34,4 @@ else:
     print("Better Luck next time")
     quit()
 
-answer3 = input("What is your age? ")
-if answer3.lower() == 23:
-    print("correct")
-else:
-    print("Better Luck next Time")
-    quit()
+print("you got " + str(score) + " questions right")
