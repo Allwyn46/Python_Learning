@@ -13,6 +13,7 @@ else:
     quit()
 
 random_number = random.randint(0,top_of_range)
+guess = 0;
 
 while True:
     user_guess = input("Make a guess ")
@@ -24,7 +25,12 @@ while True:
 
     if user_guess == random_number:
         print("You got it!")
+        print("You took " + str(guess) + " guesses")
         break
     else:
-        print("You got it wrong")
+        if user_guess > random_number:
+            print("You guessed above the number")
+        else:
+            print("You guessed below the number")
+        guess += 1
         continue
